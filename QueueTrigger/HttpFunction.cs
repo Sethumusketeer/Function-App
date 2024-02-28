@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace QueueTrigger
+namespace FunctionTrigger
 {
-    public static class Function1
+    public static class HttpFunction
     {
-        [FunctionName("Function1")]
+        [FunctionName("HttpFunction")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
