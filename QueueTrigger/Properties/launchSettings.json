@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "QueueTrigger": {
+    "FunctionTrigger": {
       "commandName": "Project",
       "commandLineArgs": "--port 7115",
       "launchBrowser": false
